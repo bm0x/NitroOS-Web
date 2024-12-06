@@ -1,7 +1,3 @@
-interface TopBarProps {
-  onLock: () => void;
-}
-
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -12,6 +8,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+
+interface TopBarProps {
+  onLock: () => void;
+}
 
 export default function TopBar({ onLock }: TopBarProps) {
   const [currentTime, setCurrentTime] = useState(new Date())

@@ -6,7 +6,6 @@ import TopBar from './TopBar'
 import Window from './Window'
 import DesktopIcon from './DesktopIcon'
 import { useWallpaper } from './WallpaperContext'
-import { ReactNode } from 'react'
 
 interface DesktopProps {
   onLock: () => void
